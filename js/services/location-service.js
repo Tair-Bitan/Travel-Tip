@@ -46,12 +46,12 @@ function _createLocation(name, lat, lng) {
 
 function getLocationByName(locationName) {
     return axios.get(
-        `https://maps.googleapis.com/maps/api/geocode/json?address=${locationName}&key=AIzaSyA9krZ02aDNloGSkQmiwb-2XLuChoMHJh4`
+        `https://maps.googleapis.com/maps/api/geocode/json?address=${locationName}&key=AIzaSyAfgCu6x43t2Jjo_NfrA-0zv6AWjj9V4Zs`
     );
 }
 
 function getLocationByCoord(coord) {
     return axios.get(
-        `https://maps.googleapis.com/maps/api/geocode/json?latlng=${coord.lat()},${coord.lng()}&key=AIzaSyA9krZ02aDNloGSkQmiwb-2XLuChoMHJh4`
+        `https://maps.googleapis.com/maps/api/geocode/json?latlng=${coord.lat()},${coord.lng()}&key=AIzaSyAfgCu6x43t2Jjo_NfrA-0zv6AWjj9V4Zs`
     );
 }
