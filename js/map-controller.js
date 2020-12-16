@@ -107,9 +107,9 @@ export function initMap(lat = 32.0749831, lng = 34.9120554) {
                 .getLocationByCoord(ev.latLng)
                 .then(
                     (res) =>
-                        (document.querySelector('.my-location').innerText =
-                            `Location: ` +
-                            res.data.results[0].formatted_address)
+                    (document.querySelector('.my-location').innerText =
+                        `Location: ` +
+                        res.data.results[0].formatted_address)
                 );
         });
     });
@@ -158,9 +158,8 @@ function renderLocations(locations) {
                     <td>${location.name}</td>
                     <td>${location.lat}</td>
                     <td>${location.lng}</td>
-                    <td><button class="go-btn" data-lat="${
-                        location.lat
-                    }" data-lng="${location.lng}" >Go!</button></td>
+                    <td><button class="go-btn" data-lat="${location.lat
+            }" data-lng="${location.lng}" >Go!</button></td>
                     <td><button class="delete-btn" data-idx="${idx}">Delete</button></td>
                 </tr>
               `;

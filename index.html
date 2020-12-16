@@ -1,58 +1,59 @@
+g
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="css/style.css" />
-        <title>Travel Tip</title>
-    </head>
 
-    <body>
-        <header class="flex main-layout">
-            <h1 class="logo">TravelTip</h1>
-            <div class="search-location">
-                <form class="locations-form">
-                    <input class="locations-input" type="text" name="" id="" />
-                    <button type="submit">GO</button>
-                </form>
-            </div>
-            <button class="my-location-btn">My Location</button>
-        </header>
-        <section class="location-info main-layout flex space-around">
-            <label class="my-location">Location:</label>
-            <button class="copy-url-btn">Copy Location</button>
-        </section>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    it <title>Travel Tip</title>
+</head>
 
-        <section class="main-content flex main-layout">
-            <div class="first-panel flex col">
-                <div class="weather-panel">todo weather</div>
-                <div class="locations">
-                    <table class="locations-table" border="1">
-                        <thead>
-                            <tr>
-                                <td>ID</td>
-                                <td>Name</td>
-                                <td>Lat</td>
-                                <td>Lng</td>
-                                <!-- <td>Weather</td>
+<body>
+    <header class="flex main-layout">
+        <h1 class="logo">TravelTip</h1>
+        <div class="search-location">
+            <form class="locations-form">
+                <input class="locations-input" type="text" name="" id="" />
+                <button type="submit">GO</button>
+            </form>
+        </div>
+        <button class="my-location-btn">My Location</button>
+    </header>
+    <section class="location-info main-layout flex space-around">
+        <label class="my-location">Location:</label>
+        <button class="copy-url-btn">Copy Location</button>
+    </section>
+
+    <section class="main-content flex main-layout">
+        <div class="first-panel flex col">
+            <div class="weather-panel">todo weather</div>
+            <div class="locations">
+                <table class="locations-table" border="1">
+                    <thead>
+                        <tr>
+                            <td>ID</td>
+                            <td>Name</td>
+                            <td>Lat</td>
+                            <td>Lng</td>
+                            <!-- <td>Weather</td>
                             <td>CreatedAt</td>
                             <td>updatedAt</td> -->
-                                <td colspan="2">Actions</td>
-                            </tr>
-                        </thead>
-                        <tbody class="locations-data"></tbody>
-                    </table>
-                </div>
+                            <td colspan="2">Actions</td>
+                        </tr>
+                    </thead>
+                    <tbody class="locations-data"></tbody>
+                </table>
             </div>
-            <div class="second-panel" id="map"></div>
-        </section>
-        <button class="btn">Click Me</button>
+        </div>
+        <div class="second-panel" id="map"></div>
+    </section>
+    <button class="btn">Click Me</button>
 
-        <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.0/axios.min.js"
-            integrity="sha512-DZqqY3PiOvTP9HkjIWgjO6ouCbq+dxqWoJZ/Q+zPYNHmlnI2dQnbJ5bxAHpAMw+LXRm4D72EIRXzvcHQtE8/VQ=="
-            crossorigin="anonymous"
-        ></script>
-        <script type="module" src="js/map-controller.js"></script>
-    </body>
+    <script src="lib/axios.js"
+        integrity="sha512-DZqqY3PiOvTP9HkjIWgjO6ouCbq+dxqWoJZ/Q+zPYNHmlnI2dQnbJ5bxAHpAMw+LXRm4D72EIRXzvcHQtE8/VQ=="
+        crossorigin="anonymous"></script>
+    <script type="module" src="js/map-controller.js"></script>
+</body>
+
 </html>
