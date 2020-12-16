@@ -2,3 +2,13 @@ header {
     align-items: center;
     justify-content: space-around;
 }
+
+header h1 {
+    font-size: 60px;
+    color: whitesmoke;
+    text-shadow: 2px 1px 0px black;
+}
+
+header input {
+    line-height: 1.6em;
+}

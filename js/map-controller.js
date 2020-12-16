@@ -26,10 +26,10 @@ window.onload = () => {
                 console.log('err!!!', err);
             });
     });
-    document.querySelector('.btn').addEventListener('click', (ev) => {
-        console.log('Aha!', ev.target);
-        panTo(35.6895, 139.6917);
-    });
+    // document.querySelector('.btn').addEventListener('click', (ev) => {
+    //     console.log('Aha!', ev.target);
+    //     panTo(35.6895, 139.6917);
+    // });
     document
         .querySelector('.locations-form')
         .addEventListener('submit', (ev) => {
@@ -158,7 +158,7 @@ function renderLocations(locations) {
                     <td>${location.name}</td>
                     <td>${location.lat}</td>
                     <td>${location.lng}</td>
-                    <td><button class="go-btn" data-lat="${location.lat
+                    <td class="go-td"><button class="go-btn" data-lat="${location.lat
             }" data-lng="${location.lng}" >Go!</button></td>
                     <td><button class="delete-btn" data-idx="${idx}">Delete</button></td>
                 </tr>

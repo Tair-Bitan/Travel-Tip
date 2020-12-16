@@ -2,48 +2,92 @@
 @import 'main-content.css';
 @import 'main-layout.css';
 @import 'location-info.css';
-
 * {
     box-sizing: border-box;
 }
 
 body {
     margin: 0 auto;
-    background-color: lightsalmon;
+    background-color: lightblue;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+}
+
+button {
+    box-shadow: 0px 10px 14px -7px #336B87;
+    background: linear-gradient(to bottom, #90AFC5 5%, #336B87 100%);
+    border-radius: 4px;
+    border: 1px solid #90AFC5;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 6px 12px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #336B87;
+    transition: all .5s;
+}
+
+button:hover {
+    background: linear-gradient(to bottom, #90AFC5 5%, #336B87 100%);
+    transform: scale(1.2);
+}
+
+button:active {
+    position: relative;
+    top: 1px;
+}
+
+.location-info .my-location{
+font-size: 2em;
 }
 
 /* HELPERS */
+
 /* grid-helpers */
+
 .grid {
     display: grid;
     color: black;
 }
+
 /* flex-helpers */
+
 .flex {
     display: flex;
 }
+
 .flex.col {
     flex-direction: column;
 }
+
 .inline-flex {
     display: inline-flex;
 }
+
 .flex.align-center {
     align-items: center;
 }
+
 .flex.space-between {
     justify-content: space-between;
 }
+
 .flex.space-around {
     justify-content: space-around;
 }
+
 .flex.center {
     justify-content: center;
 }
+
 .flex.wrap {
     flex-wrap: wrap;
 }
+
 /* list-helpers */
+
 .clean-list {
     margin: 0;
     padding: 0;

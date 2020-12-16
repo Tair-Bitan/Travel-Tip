@@ -1,4 +1,3 @@
-g
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,7 +9,7 @@ g
 </head>
 
 <body>
-    <header class="flex main-layout">
+    <header class="flex space-between main-layout">
         <h1 class="logo">TravelTip</h1>
         <div class="search-location">
             <form class="locations-form">
@@ -20,16 +19,17 @@ g
         </div>
         <button class="my-location-btn">My Location</button>
     </header>
-    <section class="location-info main-layout flex space-around">
+
+    <section class="location-info main-layout flex space-between">
         <label class="my-location">Location:</label>
         <button class="copy-url-btn">Copy Location</button>
     </section>
 
     <section class="main-content flex main-layout">
-        <div class="first-panel flex col">
+        <div class="first-panel flex col space-between">
             <div class="weather-panel">todo weather</div>
             <div class="locations">
-                <table class="locations-table" border="1">
+                <table class="locations-table">
                     <thead>
                         <tr>
                             <td>ID</td>
@@ -48,7 +48,8 @@ g
         </div>
         <div class="second-panel" id="map"></div>
     </section>
-    <button class="btn">Click Me</button>
+
+    <!-- <button class="btn">Click Me For Tokyo</button> -->
 
     <script src="lib/axios.js"
         integrity="sha512-DZqqY3PiOvTP9HkjIWgjO6ouCbq+dxqWoJZ/Q+zPYNHmlnI2dQnbJ5bxAHpAMw+LXRm4D72EIRXzvcHQtE8/VQ=="
