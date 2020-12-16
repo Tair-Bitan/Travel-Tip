@@ -1,0 +1,51 @@
+@import 'header.css';
+@import 'main-content.css';
+@import 'main-layout.css';
+@import 'location-info.css';
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    background-color: lightsalmon;
+}
+
+/* HELPERS */
+/* grid-helpers */
+.grid {
+    display: grid;
+    color: black;
+}
+/* flex-helpers */
+.flex {
+    display: flex;
+}
+.flex.col {
+    flex-direction: column;
+}
+.inline-flex {
+    display: inline-flex;
+}
+.flex.align-center {
+    align-items: center;
+}
+.flex.space-between {
+    justify-content: space-between;
+}
+.flex.space-around {
+    justify-content: space-around;
+}
+.flex.center {
+    justify-content: center;
+}
+.flex.wrap {
+    flex-wrap: wrap;
+}
+/* list-helpers */
+.clean-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}

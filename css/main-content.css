@@ -1,0 +1,25 @@
+.main-content {
+    justify-content: space-around;
+}
+
+.first-panel {
+    width: 50%;
+    margin-inline-end: 1rem;
+}
+
+.first-panel .weather-panel {
+    width: 100%;
+    height: 50%;
+    background-color: whitesmoke;
+    margin-bottom: 1em;
+}
+.first-panel .locations {
+    width: 100%;
+    height: 50%;
+    background-color: lightblue;
+}
+
+.second-panel {
+    width: 50%;
+    height: 400px;
+}
